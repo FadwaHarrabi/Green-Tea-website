@@ -1,0 +1,241 @@
+.banners {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+.banners .slide-show {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banners .slide {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banners .slide img {
+  width: 100%;
+  height: 50%;
+}
+
+.banners .dot-container {
+  text-align: center;
+  margin-top: -40px;
+}
+
+.banners span {
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
+  background-color: gray;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.banners .active {
+  background-color: #279ed9;
+}
+
+.features {
+  width: 80%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-items: center;
+  margin-top: 40px;
+  padding-bottom: 10px;
+}
+
+.features img {
+  width: 50px;
+  padding-right: 10px;
+}
+
+.features h1 {
+  display: inline;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.features .section {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 30px 15px 30px 15px;
+  border: 1px solid #e0e0e0;
+}
+
+.serach-bar-container{
+  width: 100%;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: 470px 80px;
+  margin-top: 40px;
+  column-gap: 10px;;
+}
+
+.serach-bar-container input{
+  padding: 10px 5px;
+  font-size: 15px;
+  border: 1px solid  rgb(168, 195, 255);
+  outline: none;
+}
+
+.serach-bar-container button{
+  color: white;
+  background-color: rgb(0, 73, 231);
+  border: 1px solid  rgb(0, 73, 231);
+  font-size: 20px;
+  outline: none;
+}
+
+.serach-bar-container button:hover{
+  background-color: rgb(0, 62, 196);
+  border: 1px solid  rgb(0, 62, 196);
+  cursor: pointer;
+}
+
+.exclusive-products {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.exclusive-products h1 {
+  font-weight: 700;
+  color: #383838;
+}
+
+.exclusive-products .container {
+  width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-items: center;
+  margin-top: 40px;
+}
+
+.exclusive-products .container .section {
+  width: fit-content;
+  border: 1px solid #ebebeb;
+  background-color: #f7f7f7;
+  margin-bottom: 40px;
+  transition: .3s;
+}
+
+.exclusive-products .container .section:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.exclusive-products .container .section img {
+  width: 200px;
+}
+
+.exclusive-products .container .section h1 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.exclusive-products .container .section h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #279ed9;
+  margin-top: 5px;
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .features img {
+    width: 40px;
+    padding-right: 5px;
+  }
+
+  .features h1 {
+    font-size: 0.9rem;
+  }
+
+  .features .section {
+    width: 120px;
+    padding: 20px 15px 20px 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .features img {
+    width: 40px;
+    padding-right: 10px;
+  }
+
+  .features h1 {
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .features {
+    grid-template-columns: 50% 50%;
+  }
+
+  .features {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .features .section {
+    width: 200px;
+    padding: 20px 15px 20px 15px;
+    margin-top: 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+ .banners span {
+    border-radius: 50%;
+    height: 10px;
+    width: 10px;
+  }
+
+  .features {
+    margin-top: 50px;
+  }
+
+  .features .section {
+    width: 150px;
+  }
+
+  .exclusive-products {
+    margin-top: 40px;
+  }
+
+  .exclusive-products .container {
+    width: 400px;
+    grid-template-columns: auto auto;
+  }
+
+  .exclusive-products .container .section img {
+    width: 180px;
+  }
+  
+}

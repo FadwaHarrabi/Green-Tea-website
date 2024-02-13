@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f2f3f2;
+}
+
+.profile-area {
+    width: 70%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.profile-area #title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.profile-area .section-one {
+    display: grid;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    padding: 10px;
+}
+
+.profile-area .section-one img {
+    display: grid;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+.profile-area .section-one .right {
+    margin-left: 10px;
+}
+
+.profile-area .section-one h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: -7px;
+}
+
+.profile-area .section-one h3 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: -7px;
+}
+
+.profile-area .section-two {
+    box-sizing: border-box;
+    border-top: 1px solid #f2f2f2;
+    padding-top: 10px;
+}
+
+.profile-area .section-two #left {
+    font-weight: 500;
+    margin-right: 5px;
+}
+
+.profile-area .button-container{
+    position: relative;
+    width: max-content;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.profile-area button{
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px 15px;
+    font-size: 15px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.profile-area #editProfileBtn{
+    background-color: #003ecb;
+}
+
+.profile-area #logoutBtn{
+    background-color: rgb(214, 0, 0);
+}
+
+.profile-area #editProfileBtn:hover {
+    cursor: pointer;
+    background-color: #002f9e;
+}
+
+.profile-area #logoutBtn:hover {
+    cursor: pointer;
+    background-color: rgb(179, 0, 0);
+}
+
+.orders-area {
+    width: 70%;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.orders-area #title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+
+.orders-area .orders{
+    margin-top: 20px;
+}
+
+.orders-area #emptyOrders{
+    text-align: center;
+    font-size: 13px;
+}
+
+.orders-area .orders .section{
+    display: grid;
+    grid-template-columns: 50px auto auto auto;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+.orders-area .orders .section:hover{
+    cursor: pointer;
+    background-color: #f2f3f2;
+}
+
+.orders-area .orders .section img{
+    width: 50px;
+}
+
+.orders-area .orders .section #name{
+    margin-left: 10px;
+}
+
+.orders-area .orders .section #id{
+    text-align: right;
+}
+
+.orders-area .orders .section #date{
+    text-align: right;
+}

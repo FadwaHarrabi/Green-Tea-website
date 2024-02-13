@@ -1,0 +1,158 @@
+.workplace .add-products{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.workplace .add-products h1 {
+    padding: 5px;
+    font-weight: 500; 
+    font-size: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);  
+}
+
+.workplace .add-products .main-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    column-gap: 10px;
+}
+
+.workplace .add-products h2 {
+    font-weight: 400; 
+    font-size: 13px;  
+    opacity: 0.8;
+}
+
+.workplace .add-products .left-side{
+    display: grid;
+    justify-items: center;
+}
+
+.workplace .add-products .main-container img{
+    margin-top: 20px;
+    min-height: 150px;
+    width: 150px;
+}
+
+.workplace .add-products .right-side{
+    display: grid;
+    justify-items: center;
+}
+
+.workplace .add-products input[type="file"]{
+    border: 1px solid rgb(219, 219, 219);   
+    margin-bottom: 10px;
+    width: 80%;
+    outline: white;
+    border: 2px solid rgb(226, 226, 226);
+}
+
+.workplace .add-products input[type="text"]{
+    margin-top: 10px;
+    width: 90%;
+}
+
+.workplace .add-products textarea{
+    height: 160px;
+    width: 90%;
+    margin-top: 10px;
+    resize: none;
+}
+
+.workplace .add-products input,
+textarea {
+    border: 2px solid rgb(226, 226, 226);
+    padding: 10px;
+}
+
+.workplace .add-products input:focus, textarea:focus {
+    border: 2px  rgb(54, 122, 57);
+    outline: none;
+}
+
+.workplace .add-products input[type="submit"] {
+    background-color: rgb(29, 85, 32);
+    outline: none;
+    border: none;
+    color: white;
+    height: 35px;
+    margin-top: 30px;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+.workplace .add-products input[type="submit"]:hover {
+    background-color: rgb(34, 119, 38);
+    cursor: pointer;
+}
+
+.workplace .manage-product{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.workplace .manage-product h1 {
+    padding: 5px;
+    font-weight: 500; 
+    font-size: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);  
+}                                                                                                                                               
+  
+.workplace .manage-products{
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.manage-products h1{
+    padding: 5px;
+    font-weight: 500; 
+    font-size: 20px;
+    border-bottom: 1px solid rgb(219, 219, 219);  
+}
+  
+.manage-products .product{
+    display: grid;
+    grid-template-columns: auto 20px;
+    background-color: rgb(250, 250, 250);
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+  
+.manage-products .main{
+    display: grid;
+    grid-template-columns: 50px max-content max-content;
+    align-items: center;
+    border-radius: 3px;
+}
+
+.manage-products .main img{
+    width: 50px;
+}
+  
+.manage-products .main h2{
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    border-right: 1px solid #f2f2f2;
+}
+
+.manage-products .main h3{
+    margin-left: 10px;
+    font-weight: 300;
+    font-size: 15px;
+    border-right: 1px solid #f2f2f2;
+}
+  
+.manage-products .delete{
+    width: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}

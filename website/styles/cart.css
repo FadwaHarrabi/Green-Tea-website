@@ -1,0 +1,230 @@
+.wrapper{
+  background-color: rgb(226, 226, 226);
+}
+
+.cart-container{
+  width: 80%;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  column-gap: 20px;
+}
+
+.cart-container #noItemsInCartLabel{
+  background-color: white;
+  position: absolute;
+  width: 100%;
+  padding: 40px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+}
+
+.product-container #title{
+  font-size: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.product-container .product{
+  display: grid;
+  grid-template-columns: auto 20px;
+  background-color: rgb(247, 247, 247);
+  margin-bottom: 10px;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-container .product .main{
+  display: grid;
+  grid-template-columns: 70px auto auto;
+  align-items: center;
+  border-radius: 3px;
+
+}
+
+.product-container .product:hover{
+  background-color: rgb(235, 235, 235);
+}
+
+.product-container .product img{
+  width: 70px;
+}
+
+.product-container .product h1{
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.product-container .product h2{
+  justify-self: right;
+  margin-right: 10px;
+  padding-right: 10px;
+  font-weight: 500;
+  font-size: 15px;
+  border-right: 1px solid #f2f2f2;
+}
+
+.product-container .product .delete{
+  width: 20px;
+  opacity: 0.7;
+}
+
+.product-container .product .delete:hover{
+  cursor: pointer;
+}
+
+.cart-container .cart-summary{
+  background-color: white;
+  padding: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  position: relative;
+  height: min-content;
+}
+
+.cart-summary h1{
+  font-size: 20px;
+  border-bottom: 1px solid #f2f2f2;
+  padding-bottom: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.cart-summary div{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.cart-summary p{
+  margin-top: 5px;
+  text-align: right;
+}
+
+.cart-summary .left{
+  text-align: left;
+}
+
+.cart-summary .total{
+  color: rgb(23, 56, 207);
+  margin-top: 15px;
+  font-size: 1.1rem;
+}
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1200px) {
+  .features img {
+    width: 40px;
+    padding-right: 5px;
+  }
+
+  .features h1 {
+    font-size: 0.9rem;
+  }
+
+  .features .section {
+    width: 120px;
+    padding: 20px 15px 20px 15px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .header-container .right-side input {
+    width: 150px;
+  }
+
+  .features img {
+    width: 40px;
+    padding-right: 10px;
+  }
+
+  .features h1 {
+    display: inline;
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .header-container {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .header-container .left-side {
+    display: grid;
+    grid-template-columns: min-content auto;
+  }
+
+  .header-container .left-side h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-container .main-menu {
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+  }
+
+  .features {
+    grid-template-columns: 50% 50%;
+  }
+
+  .features {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .features .section {
+    width: 200px;
+    padding: 20px 15px 20px 15px;
+    margin-top: 15px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+  .header-container .search-bar {
+    display: none;
+  }
+
+  .header-container .dropdown-content {
+    right: 0px;
+    right: -10px;
+  }
+
+  .product-container{
+    width: 100%;
+    grid-template-columns: auto;
+  }
+
+  .product-container .image {
+    text-align: center;
+  }
+
+  .product-container .image img{
+    width: 96%;
+  }
+  
+  
+}
