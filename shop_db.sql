@@ -85,16 +85,6 @@ CREATE TABLE `orders` (
 -- Déchargement des données de la table `orders`
 --
 
-INSERT INTO `orders` (`id`, `user_id`, `name`, `number`, `email`, `address`, `address_type`, `method`, `product_id`, `price`, `qty`, `date`, `status`) VALUES
-(1, 0, 'Harrabi Fadwa', '1', 'fadwaharrabi58@gmail.com', 'Sidi Bouzid, Sfax, Sidi Bouzid , tunisie, 454464', 'home', 'cash on delivery', 3, 160.00, 1, '2024-01-22 20:07:33', 'shipped'),
-(2, 0, 'Harrabi Fadwa', '2', 'fadwaharrabi58@gmail.com', 'Sidi Bouzid, Sfax, Sidi Bouzid , tunisie, 454464', 'home', 'cash on delivery', 14, 80.00, 1, '2024-01-23 15:59:17', 'canceled'),
-(3, 123, 'Harrabi Fadwa', '8461', 'bilelharrabi@gmail.com', 'Sidi Bouzid, Sfax, Sidi Bouzid , tunisie, 298645', 'office', 'paypal', 3, 160.00, 1, '2024-02-03 23:08:25', 'rejected'),
-(4, 0, 'zouhour bellamine', '5', 'zouhourbellamine@gmail.com', 'sfax, sfax, Monastir, Monastir, 12345', 'office', 'paypal', 4, 50.00, 1, '2024-02-05 14:24:07', 'Accept'),
-(5, 0, 'imen souissi', '25366985', 'imen@gmail.com', 'Sfax, kerkenah, Sfax, cité ons, 7485', 'office', 'easypaisa', 3, 160.00, 1, '2024-02-07 21:15:32', 'canceled'),
-(6, 0, 'imen souissi', '25366985', 'imen@gmail.com', 'Sfax, kerkenah, Sfax, cité ons, 7485', 'office', 'easypaisa', 6, 80.00, 1, '2024-02-07 21:15:32', 'shipped'),
-(7, 0, 'imen souissi', '74859612', 'imen@gmail.com', 'Sfax, kerkenah, Monastir, Monastir, 298645', 'office', 'paypal', 2, 200.00, 5, '2024-02-07 21:18:17', 'shipped'),
-(8, 0, 'ragheb', '98745632', 'raghebharrabi@gmail.com', 'Sidi Bouzid , Sidi Bouzid , Sidi Bouzid , Tataouin, 7412', 'office', 'paypal', 13, 70.00, 8, '2024-02-07 21:21:25', 'rejected'),
-(9, 0, 'ghaith krifa', '25856545', 'ghaithkrifa@gmail.com', 'Monastir, Monastir, Sfax, tunisie, 75964', 'home', 'net banking', 4, 50.00, 1, '2024-02-07 21:29:08', '0');
 
 -- --------------------------------------------------------
 
@@ -115,17 +105,6 @@ CREATE TABLE `products` (
 -- Déchargement des données de la table `products`
 --
 
-INSERT INTO `products` (`id`, `name`, `price`, `image`, `product_detail`, `created_at`) VALUES
-(2, 'Fukamushi Sencha Tea', 200.00, '65ac0c45941a0.jpg', '.', '2024-02-03 23:54:27'),
-(3, 'Kabusecha Green Tea', 160.00, '65ac0c7d61ec3.jpg', '.', '2024-02-03 23:54:27'),
-(4, 'Gykuro Green Tea', 50.00, '65ac0cbb0cc3e.jpg', '.', '2024-02-03 23:54:27'),
-(6, 'Lemon Verbena Tea', 80.00, '65ac0d0c59ef4.jpg', '.', '2024-02-03 23:54:27'),
-(8, 'Gunpowder Tea', 120.00, '65ac0d57d5a3c.jpg', '.', '2024-02-03 23:54:27'),
-(9, 'Minty Lemon Iced Tea', 95.00, '65ac0d7d4e9bc.jpg', '.', '2024-02-03 23:54:27'),
-(11, 'Lemon Green Tea', 123.00, '65ac1429e72d1.jpg', '.', '2024-02-03 23:54:27'),
-(13, 'Longjing Tea', 70.00, '65ac1565441bc.jpg', '.', '2024-02-03 23:54:27'),
-(14, 'Sweet Iced Lemon Tea', 80.00, '65ac168320524.jpg', '.', '2024-02-03 23:54:27'),
-(15, 'Tea', 203.00, '20240204005516-1.webp', 'moringa', '2024-02-03 23:55:16');
 
 -- --------------------------------------------------------
 
@@ -146,18 +125,6 @@ CREATE TABLE `users` (
 -- Déchargement des données de la table `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `email`, `password`, `user_type`, `gender`) VALUES
-('0123', 'admin', 'admin@gmail.com', 'admin123', 'admin', 'female'),
-('aoNPugcpJDnkity4Vdhv', 'zouhour bellamine', 'zouhourbellamine@gmail.com', 'zouhour123', 'user', 'female'),
-('Gjg9q0dCgs6IMLR1GJA8', 'Harrabi Ragheb', 'raghebharrabi@gmail.com', '753', 'user', 'male'),
-('HiaEEduwqxo8XNteZNPr', 'Nourelhouda@gmail.co', 'nourelhouda2000@gmail.com', 'nour123', 'user', 'female'),
-('L5UtBbi6aWbA8EObbjrk', 'Harrabi Fadwa', 'fadwaharrabi58@gmail.com', '1234', 'user', 'female'),
-('pg1RxWig8vmPO2vQObTD', 'imen souissi', 'imen@gmail.com', 'imen123', 'user', 'female'),
-('pZuEXgtNTkKccnGFTy6C', 'molka trabelsi', 'molka85@gmail.com', '74185', 'user', 'female'),
-('qjr4nqtY9vHnYFbZ8qrl', 'Slimeni Anis', 'anisslimeni@gmail.com', '2525', 'user', 'male'),
-('tE2NXu8Yr3QOyb2gcQsR', 'chouroukkedri', 'chouroukkedri@gmail.com', 'chourouk123', 'user', 'female'),
-('u0oi0Byw5kQcBpEAEOat', 'ghaith krifa', 'ghaithkrifa@gmail.com', 'ghaith147', 'user', 'male'),
-('u1MVeUAOylkW8aB7Ijns', 'Harrabi Bilel', 'bilelharrabi@gmail.com', '159', 'user', 'male');
 
 -- --------------------------------------------------------
 
@@ -176,23 +143,7 @@ CREATE TABLE `wishlist` (
 -- Déchargement des données de la table `wishlist`
 --
 
-INSERT INTO `wishlist` (`id`, `user_id`, `product_id`, `price`) VALUES
-('20dnojdpebMii84YLZQZ', 'aoNPugcpJDnkity4Vdhv', 3, 160),
-('2A2nak3CViXZIANuc11U', 'jquHY0MKrMdoNXxGU98X', 14, 80),
-('880lUkvbD3w1r383k2P0', 'L5UtBbi6aWbA8EObbjrk', 9, 95),
-('AeQnN89cJmy7hEGJtqwi', 'jquHY0MKrMdoNXxGU98X', 6, 80),
-('dtXqYMMD5xSwMc2ezwgW', 'jquHY0MKrMdoNXxGU98X', 4, 50),
-('EeV0HZTnbLZYsqFWZFaS', 'L5UtBbi6aWbA8EObbjrk', 13, 70),
-('GZRqW6pwRmyU4FSZAUvb', 'aoNPugcpJDnkity4Vdhv', 4, 50),
-('k7x0v4b4m2NdSDqkzoRd', 'L5UtBbi6aWbA8EObbjrk', 3, 160),
-('kP8EOd9rAwAR8QZXOuNk', 'jquHY0MKrMdoNXxGU98X', 13, 70),
-('M5sCyEJpsVmzylQ474aY', 'aoNPugcpJDnkity4Vdhv', 15, 203),
-('Oswnhs9fy4bhtvARMpQ6', 'pg1RxWig8vmPO2vQObTD', 4, 50),
-('OTk2MiwSHBLexi5TbPOZ', 'aoNPugcpJDnkity4Vdhv', 6, 80),
-('SKcoBm4weDuUmbMmULr4', 'pg1RxWig8vmPO2vQObTD', 9, 95),
-('WcVvLl5aJDtwFKhdtXVU', 'jquHY0MKrMdoNXxGU98X', 11, 123),
-('xAfDq7fgjSBEgig1id4o', 'aoNPugcpJDnkity4Vdhv', 13, 70),
-('YMo0r32LMpyeeFqKAV3y', 'aoNPugcpJDnkity4Vdhv', 9, 95);
+
 
 --
 -- Index pour les tables déchargées
