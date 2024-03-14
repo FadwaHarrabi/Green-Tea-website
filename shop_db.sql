@@ -54,10 +54,7 @@ CREATE TABLE `contact` (
 -- Déchargement des données de la table `contact`
 --
 
-INSERT INTO `contact` (`id`, `name`, `email`, `number`, `message`, `created_at`) VALUES
-(1, 'Harrabi Fadwa', 'fadwaharrabi58@gmail.com', '51730254', ' nothing', '2024-02-05 20:42:56'),
-(2, 'Harrabi Fadwa', 'fadwaharrabi58@gmail.com', '51730254', ' nothing', '2024-02-05 20:48:25'),
-(3, 'Harrabi Fadwa', 'fadwaharrabi58@gmail.com', '51730254', 'Fukamushi Sencha Tea is my favorite product in your shop.', '2024-02-05 20:50:05');
+
 
 -- --------------------------------------------------------
 
